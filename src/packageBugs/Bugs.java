@@ -25,16 +25,15 @@ public class Bugs {
           System.out.println(cena);
         }
 
-        public static void ukol5() {
-            BigDecimal cena = new BigDecimal("0");
-              for (int i = 0; i < 10; i++) {
-                  //cena += 0.1; bug
+        public static void ukol6() {
+            BigDecimal cena = BigDecimal.valueOf(0.0);
+            cena = cena.add(BigDecimal.valueOf(0.1));
 
                 System.out.println(cena);
-              }
         }
 
-        public static void ukol6() {
+
+        public static void ukol5() {
             BigDecimal bdcena = BigDecimal.valueOf(0.0);
             BigDecimal bdzvysenihodnoty = BigDecimal.valueOf(0.1);
 
