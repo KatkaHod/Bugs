@@ -35,10 +35,16 @@ public class Bugs {
         }
 
         public static void ukol6() {
-            BigDecimal cena = 0;
-            cena = cena.add(BigDecimal.valueOf(0.1));
-            System.out.println(cena);
+            BigDecimal bdcena = BigDecimal.valueOf(0.0);
+            BigDecimal bdzvysenihodnoty = BigDecimal.valueOf(0.1);
+
+            for (int i = 0; i < 10; i++) {
+                bdcena = bdcena.add(bdzvysenihodnoty);
+            }
+            System.out.println(bdcena);
         }
+
+
 
         public static void ukol7() {
             int vykonMotoru = 120;
