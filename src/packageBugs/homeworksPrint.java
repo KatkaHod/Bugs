@@ -3,7 +3,7 @@ package packageBugs;
 public class homeworksPrint {
     public static void main(String[] args) {
         Bugs bugs = new Bugs();
-        System.out.println("Methods call from the Bugs class");
+        System.out.println("Methods call from the Bugs class. ");
 
        System.out.print("1.: ");      bugs.homework1();
        System.out.print("2.: ");      bugs.homework2();
